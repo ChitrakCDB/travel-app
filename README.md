@@ -1,24 +1,13 @@
-# README
+## ✈️ Travel Request Platform
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+🚀 Features
 
-Things you may want to cover:
+    🔐 Admin Dashboard using ActiveAdmin
 
-* Ruby version
+    📩 Travel Request Form with Turbo-powered real-time updates
 
-* System dependencies
+    🧠 Service Layer for clean architecture
 
-* Configuration
+    ⚡ StimulusJS Controllers for form reset and auto-dismiss notifications
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    ✅ RSpec tests for models and services

@@ -64,3 +64,4 @@ gem "activeadmin", "~> 3.3"
 gem "rspec-rails", "~> 8.0"
 
 gem "devise", "~> 4.9"
+gem "sprockets-rails"

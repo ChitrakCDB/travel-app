@@ -1,0 +1,11 @@
+<div class="max-w-xl mx-auto mt-12 p-6 border rounded bg-white">
+  <h2 class="text-2xl font-bold mb-4">Request Secure Travel</h2>
+  <turbo-frame id="travel_form">
+    <%= render partial: "form", locals: { travel_request: @travel_request || TravelRequest.new } %>
+  </turbo-frame>
+</div>
+<turbo-frame id="travel_requests_list">
+  <div id="requests-list" class="mt-8 space-y-4">
+    <%= render @travel_requests %>
+  </div>
+</turbo-frame>

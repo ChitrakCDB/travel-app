@@ -1,0 +1,5 @@
+<div class="border border-gray-300 p-4 rounded-lg shadow-sm bg-white">
+  <div class="text-xl font-semibold text-indigo-600"><%= travel_request.destination %></div>
+  <div class="text-sm text-gray-700">From <%= travel_request.start_date %> to <%= travel_request.end_date %></div>
+  <p class="mt-2 text-gray-600 italic"><%= travel_request.notes.presence || "No notes provided." %></p>
+</div>

@@ -1,0 +1,11 @@
+<turbo-stream action="append" target="requests-list">
+  <template>
+    <%= render @travel_request %>
+  </template>
+</turbo-stream>
+
+<turbo-stream action="replace" target="travel_form">
+  <template>
+    <%= render partial: "travel_requests/form", locals: { travel_request: TravelRequest.new } %>
+  </template>
+</turbo-stream>

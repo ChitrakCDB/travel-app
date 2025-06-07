@@ -6,3 +6,9 @@ import { application } from "./application"
 
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
+import FormResetController from "./form_reset_controller"
+import FadeOutController from "./fade_out_controller"
+
+window.Stimulus = Application.start()
+Stimulus.register("form-reset", FormResetController)
+Stimulus.register("fade-out", FadeOutController)

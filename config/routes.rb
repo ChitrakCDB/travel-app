@@ -2,6 +2,8 @@
 
 Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
+  root to: "travel_requests#new"
+  resources :travel_requests, only: [ :new, :create ]
   ActiveAdmin.routes(self)
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

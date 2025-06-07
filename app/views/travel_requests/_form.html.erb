@@ -1,0 +1,11 @@
+<%= form_with model: travel_request, data: { turbo_frame: "travel_form", controller: "form-reset" }, class: "space-y-4" do |f| %>
+  <%= f.label :destination %>
+  <%= f.text_field :destination, class: "w-full border p-2 rounded" %>
+  <%= f.label :start_date %>
+  <%= f.date_field :start_date, class: "w-full border p-2 rounded" %>
+  <%= f.label :end_date %>
+  <%= f.date_field :end_date, class: "w-full border p-2 rounded" %>
+  <%= f.label :notes %>
+  <%= f.text_area :notes, class: "w-full border p-2 rounded" %>
+  <%= f.submit "Submit Request", class: "bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded" %>
+<% end %>
